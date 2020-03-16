@@ -204,7 +204,7 @@ class TodoApp extends Component{
                                             key={objet.key}  
                                             className="list-unstyled"
                                             style={ {display: "flex", justifyContent: "space-between"} }>
-                                            <label onClick={()=> {this.move(objet._id)}} style={ {cursor: 'pointer'} }>{objet.text}</label> 
+                                            <label onClick={()=> {this.move(objet)}} style={ {cursor: 'pointer'} }>{objet.text}</label> 
                                             <button className="btn btn-outline-danger my-2 my-sm-0"
                                                 onClick={e=>this.delet(objet)}>
                                                 <i className="fas fa-trash-alt"></i>
